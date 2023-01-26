@@ -1,0 +1,26 @@
+Oklander - N F   P I P E L I N E
+=================================
+//fastqc - Before
+Process output to --> outdir_0_fastqc
+
+
+//fastp - Parameters:
+quality = 30 //the quality value that a base is qualified. Default 15 means phred quality >=Q15 is qualified. (Default 15) 
+percent = 3 // unqualified_percent_limit   how many percents of bases are allowed to be unqualified (0~100). Default 40 means 40%
+
+//fastqc - After
+Process output to --> outdir_1_fastqc
+
+//Make.contigs (ensamble de contigs) del mismo individuo.
+
+//Summary.seqs (información estadística del proceso)
+
+//Screen.seqs (filtrado de secuencias indeseadas, por longitud 200-350, bases ambiguas, max homopolymer=8)
+
+//Barcode Splitter (Separación de las colecciones para separar los 3 genes)
+
+//Unique.seqs (names: grupos de nombres según secuencias únicas)
+
+//Count.seqs (conteo de seqs, mothur instalado localmente)
+//      Conteo final de genes en grupos (GH2,DQB,DRB)
+//      mothur > count.seqs(name=file.mothur.names, group=file.mothur.groups, compress=f)
