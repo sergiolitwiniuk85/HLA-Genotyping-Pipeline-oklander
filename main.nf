@@ -4,17 +4,19 @@
 include { fastqc } from './proc/fastqc.nf'
 include { fastp } from './proc/fastp.nf'
 include { fastqc2 } from './proc/fastqc2.nf'
-//include { makeContigs } from './proc/makeContigs.nf'
+include { makeContigs } from './proc/makeContigs.nf'
+include { screenSeqs } from './proc/screenSeqs.nf'
+include { summarySeqs } from './proc/summarySeqs.nf'
+
 
 //Channel.fromPath('./Data/LGE*')
   //     .view()
 params.reads = './Data/*{R1,R2}.fastq'
 params.outdir = "output"
-params.thread = 4
+params.thread = 2
 params.quality = 30
 
 ifile = Channel.fromFilePairs(params.reads)
-       .view()
        .set {reads_ch}   
               
 //fastqc (QC)
@@ -39,6 +41,8 @@ log.info """\
 
 //fastp
 
+//fastqc
+
 //Make.contigs (ensamble de contigs) del mismo individuo.
 
 //Summary.seqs (información estadística del proceso)
@@ -57,9 +61,22 @@ log.info """\
 workflow{
        fastqc(reads_ch)
        fastp_ch = fastp(reads_ch)
+       fastpOut = fastp.out[0].join(fastp.out[1])
+
        fastqc2(fastp.out.fastp_1
-                .concat(fastp.out.fastp_2))
-}
+                .concat(fastp.out.fastp_2)
+                .view())
+                
+       makeContigs(fastpOut)
+
+       toScreen = makeContigs.out.trimContigs.toSortedList().flatten()
+       
+       summarySeqs(screenSeqs(toScreen).buffer( size: 1 ).view())
+
+       summarySeqs.out.logfile.view()
+       summarySeqs.out.summary.view()
+       
+       }
 
 
 
