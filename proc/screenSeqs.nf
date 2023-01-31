@@ -7,8 +7,6 @@ path(contigs)
 
 output:
 path "*trim.contigs.good.fasta", emit: screenedContig
-//path "*.scrap.contigs.fasta", emit: scrapContigs
-//path "*.contigs_report", emit: reportContigs
 
 shell:
 '''

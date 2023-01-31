@@ -7,6 +7,7 @@ include { fastqc2 } from './proc/fastqc2.nf'
 include { makeContigs } from './proc/makeContigs.nf'
 include { screenSeqs } from './proc/screenSeqs.nf'
 include { summarySeqs } from './proc/summarySeqs.nf'
+include { barcodeSplit } from './proc/barcodeSplit.nf'
 
 
 //Channel.fromPath('./Data/LGE*')
@@ -15,10 +16,14 @@ params.reads = './Data/*{R1,R2}.fastq'
 params.outdir = "output"
 params.thread = 2
 params.quality = 30
+params.barcodeFile = './Data/barcode/barcode_file.txt'
 
 ifile = Channel.fromFilePairs(params.reads)
        .set {reads_ch}   
               
+barcodeChannel = Channel.fromPath(params.barcodeFile)
+       .view()
+       .set {barcode_ch}
 //fastqc (QC)
 
 
@@ -49,7 +54,9 @@ log.info """\
 
 //Screen.seqs (filtrado de secuencias indeseadas, por longitud 200-350, bases ambiguas, max homopolymer=8)
 
-//Barcode Splitter (Separación de las colecciones para separar los 3 genes)
+//Barcode Splitter (split into 3 genes)
+//       fastx_barcode_splitter.pl
+//	Barcode Splitter, by Assaf Gordon (gordon@cshl.edu), 11sep2008
 
 //Unique.seqs (names: grupos de nombres según secuencias únicas)
 
@@ -59,23 +66,38 @@ log.info """\
 
 
 workflow{
+
+//--------------First_step-------------------------------------
+
+
        fastqc(reads_ch)
+
        fastp_ch = fastp(reads_ch)
+
        fastpOut = fastp.out[0].join(fastp.out[1])
 
        fastqc2(fastp.out.fastp_1
-                .concat(fastp.out.fastp_2)
-                .view())
-                
+                .concat(fastp.out.fastp_2))
+
        makeContigs(fastpOut)
 
        toScreen = makeContigs.out.trimContigs.toSortedList().flatten()
        
-       summarySeqs(screenSeqs(toScreen).buffer( size: 1 ).view())
+       summarySeqs(screenSeqs(toScreen).buffer( size: 1 ))
 
-       summarySeqs.out.logfile.view()
-       summarySeqs.out.summary.view()
        
+//---------------Second_step--------------------------------------
+
+       barcodeSplit(screenSeqs.out.screenedContig, barcode_ch)
+
+
+
+
+
+
+
+
+
        }
 
 

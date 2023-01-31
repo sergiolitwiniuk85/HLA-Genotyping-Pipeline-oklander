@@ -3,3 +3,4 @@ work
 params.outdir
 Data
 outdir*
+!Data/barcode
