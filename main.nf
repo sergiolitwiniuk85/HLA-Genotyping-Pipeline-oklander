@@ -4,10 +4,10 @@
 include { fastqc } from './proc/fastqc.nf'
 include { fastp } from './proc/fastp.nf'
 include { fastqc2 } from './proc/fastqc2.nf'
-include { makeContigs } from './proc/makeContigs.nf'
-include { screenSeqs } from './proc/screenSeqs.nf'
-include { summarySeqs } from './proc/summarySeqs.nf'
-include { barcodeSplit } from './proc/barcodeSplit.nf'
+//include { makeContigs } from './proc/makeContigs.nf'
+//include { screenSeqs } from './proc/screenSeqs.nf'
+//include { summarySeqs } from './proc/summarySeqs.nf'
+//include { barcodeSplit } from './proc/barcodeSplit.nf'
 
 
 //Channel.fromPath('./Data/LGE*')
@@ -79,16 +79,16 @@ workflow{
        fastqc2(fastp.out.fastp_1
                 .concat(fastp.out.fastp_2))
 
-       makeContigs(fastpOut)
+      // makeContigs(fastpOut)
 
-       toScreen = makeContigs.out.trimContigs.toSortedList().flatten()
+      // toScreen = makeContigs.out.trimContigs.toSortedList().flatten()
        
-       summarySeqs(screenSeqs(toScreen).buffer( size: 1 ))
+       //summarySeqs(screenSeqs(toScreen).buffer( size: 1 ))
 
        
 //---------------Second_step--------------------------------------
 
-       barcodeSplit(screenSeqs.out.screenedContig, barcode_ch)
+       //barcodeSplit(screenSeqs.out.screenedContig, barcode_ch)
 
 
 
