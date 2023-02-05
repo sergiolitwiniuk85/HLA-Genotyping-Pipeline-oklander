@@ -1,4 +1,5 @@
 process makeContigs{
+
 tag "makeContigs_$sample_id"
 publishDir "outdir_makeContigs/${sample_id}", mode:'copy'
 
@@ -14,7 +15,8 @@ path "*.contigs_report", emit: reportContigs
 script:
 
 """
-mothur "#make.contigs(ffastq=${read_1}, rfastq=${read_2}, processors=2)"
+sleep 500
+mothur "#make.contigs(ffastq=${read_1}, rfastq=${read_2}, processors=4)"
 """
 
 }
