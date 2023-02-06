@@ -4,6 +4,7 @@
 include { fastqc } from './proc/fastqc.nf'
 include { fastp } from './proc/fastp.nf'
 include { fastqc2 } from './proc/fastqc2.nf'
+include { uniqueSeqs } from './proc/uniqueSeqs.nf'
 //include { makeContigs } from './proc/makeContigs.nf'
 //include { screenSeqs } from './proc/screenSeqs.nf'
 //include { summarySeqs } from './proc/summarySeqs.nf'
@@ -12,7 +13,7 @@ include { fastqc2 } from './proc/fastqc2.nf'
 
 //Channel.fromPath('./Data/LGE*')
   //     .view()
-params.reads = './Data/*{R1,R2}.fastq'
+params.reads = './Data/TIS_SENICULUS/*{R1,R2}.fastq'
 params.outdir = "output"
 params.thread = 2
 params.quality = 30
@@ -22,7 +23,6 @@ ifile = Channel.fromFilePairs(params.reads)
        .set {reads_ch}   
               
 barcodeChannel = Channel.fromPath(params.barcodeFile)
-       .view()
        .set {barcode_ch}
 //fastqc (QC)
 
@@ -76,8 +76,9 @@ workflow{
 
        fastpOut = fastp.out[0].join(fastp.out[1])
 
-       fastqc2(fastp.out.fastp_1
-                .concat(fastp.out.fastp_2))
+       uniqueSeqs(fastp.out.fastp_1.concat(fastp.out.fastp_2).view())
+       
+      // fastqc2(fastp.out.fastpMerged.view())
 
       // makeContigs(fastpOut)
 

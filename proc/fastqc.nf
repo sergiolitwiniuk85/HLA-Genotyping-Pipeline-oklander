@@ -1,4 +1,5 @@
 process fastqc{
+memory '2 GB'
 tag "FastQC_before $reads"
 publishDir("outdir_0_fastqc/${sample_id}_beforeQc", mode:'copy')
 

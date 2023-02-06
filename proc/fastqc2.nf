@@ -1,18 +1,19 @@
 
 process fastqc2{
 
+memory '2 GB'
 tag "FastQC_after $reads"
-publishDir("outdir_1_fastqc/${sample_id}_afterQc", mode:'copy')
+publishDir("outdir_1_fastqc/${reads}_afterQc", mode:'copy')
 
 input:
-tuple val(sample_id), path(reads)
+path(reads)
 
 output:
-path "fastqc2_${sample_id}_logs"
+path "fastqc2_${reads}_logs"
 
 script:
 """
-mkdir fastqc2_${sample_id}_logs
-fastqc -o fastqc2_${sample_id}_logs -t 2 ${reads}
+mkdir fastqc2_${reads}_logs
+fastqc -o fastqc2_${reads}_logs -t 4 ${reads}
 """
 }
