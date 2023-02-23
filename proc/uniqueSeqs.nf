@@ -1,4 +1,4 @@
-process uniqueSeqs2{
+process uniqueSeqs{
 publishDir("outdir_uniqueSeqsfp/${reads}", mode:"copy", overwrite:false)
 
 input:
