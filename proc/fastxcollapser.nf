@@ -28,7 +28,7 @@ fastx_collapser -i ${dqbf} -o collapsed_${dqbf}
 sleep 1
 fastx_collapser -i ${drbf} -o collapsed_${drbf}
 sleep 1
-fastx_collapser -i ${dqar} -o collapsed_${dqar}
+seqtk seq -r -c ${dqar} | fastx_collapser -o collapsed_${dqar}
 sleep 1
 fastx_collapser -i ${dqbr} -o collapsed_${dqbr}
 sleep 1

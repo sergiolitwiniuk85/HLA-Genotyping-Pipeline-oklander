@@ -6,6 +6,7 @@ process fastp{
        params.quality = 30 //the quality value that a base is qualified. Default 15 means phred quality >=Q15 is qualified. (Default 15)
        params.thread = 2 
        params.percent = 3 // unqualified_percent_limit   how many percents of bases are allowed to be unqualified (0~100). Default 40 means 40%
+       params.length = 200
  
        input:
 
@@ -19,7 +20,7 @@ process fastp{
        script:
 
        """
-       fastp -i ${reads[0]} -o fastp_${sample_id}_R1.fastq -I ${reads[1]} -O fastp_${sample_id}_R2.fastq -q ${params.quality} -w ${params.thread} -u ${params.percent}
+       fastp -i ${reads[0]} -o fastp_${sample_id}_R1.fastq -I ${reads[1]} -O fastp_${sample_id}_R2.fastq -q ${params.quality} -w ${params.thread} -u ${params.percent} --length_required ${params.length}
        
        """
 

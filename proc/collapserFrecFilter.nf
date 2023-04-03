@@ -1,7 +1,7 @@
 process collapseFilter{ 
 publishDir("outdir_filteredFastaIds/", mode:"copy", overwrite:false)
 
-params.frec = 5 //frequency percentage
+params.frec = 1 //frequency percentage
 params.env = "/home/sergiolitwiniuk/anaconda3/envs/bio/bin/python"
 
 input:
@@ -40,5 +40,3 @@ seqtk subseq ${reads} ${idFile} > ${reads}.fa
 
 
 }
-
-
