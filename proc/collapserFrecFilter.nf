@@ -38,5 +38,4 @@ script:
 seqtk subseq ${reads} ${idFile} > ${reads}.fa
 """
 
-
 }

@@ -12,28 +12,23 @@ path(drbr)
 
 
 output:
-path "collapsed_${dqaf}", emit: collapsed_dqaf
-path "collapsed_${dqbf}", emit: collapsed_dqbf
-path "collapsed_${drbf}", emit: collapsed_drbf
-path "collapsed_${dqar}", emit: collapsed_dqar
-path "collapsed_${dqbr}", emit: collapsed_dqbr
-path "collapsed_${drbr}", emit: collapsed_drbr
+path("c_${dqaf}"), emit: collapsed_dqaf
+path("c_${dqbf}"), emit: collapsed_dqbf
+path("c_${drbf}"), emit: collapsed_drbf
+path("c_${dqar}"), emit: collapsed_dqar
+path("c_${dqbr}"), emit: collapsed_dqbr
+path("c_${drbr}"), emit: collapsed_drbr
 
 
 script:
+
 """
-fastx_collapser -i ${dqaf} -o collapsed_${dqaf}
-sleep 1
-fastx_collapser -i ${dqbf} -o collapsed_${dqbf}
-sleep 1
-fastx_collapser -i ${drbf} -o collapsed_${drbf}
-sleep 1
-seqtk seq -r -c ${dqar} | fastx_collapser -o collapsed_${dqar}
-sleep 1
-fastx_collapser -i ${dqbr} -o collapsed_${dqbr}
-sleep 1
-fastx_collapser -i ${drbr} -o collapsed_${drbr}
-sleep 1
+fastx_collapser -i ${dqaf} -o c_${dqaf}
+fastx_collapser -i ${dqbf} -o c_${dqbf}
+fastx_collapser -i ${drbf} -o c_${drbf}
+seqtk seq -r ${dqar} | fastx_collapser -o c_${dqar}
+seqtk seq -r ${dqbr} | fastx_collapser -o c_${dqbr}
+seqtk seq -r ${drbr} | fastx_collapser -o c_${drbr}
 """
 
 }

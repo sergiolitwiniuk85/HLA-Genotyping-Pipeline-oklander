@@ -8,9 +8,10 @@ include { barcodeSplit_f ; barcodeSplit_r } from './proc/barcodeSplit.nf'
 include { collapseFilter ; idsToFasta } from './proc/collapserFrecFilter.nf'
 include { compare_sequences } from './proc/compareSequences.nf'
 include { fareverse } from './proc/faReverse.nf'
+include { trueAllelesDQA; trueAllelesDQB; trueAllelesDRB } from './proc/trueAllelesFilter.nf'
+include { filesForCount; collapseFilesForCount; count_sequences } from './proc/trueAllelesCountTable.nf'
 
-
-params.reads = './datos_completos/*/*{R1,R2}.fastq'
+params.reads = './Data/*/*{R1,R2}.fastq'
 params.outdir = "output"
 params.thread = 2
 params.quality = 30
@@ -18,14 +19,11 @@ params.barcodeFile1 = './Data/barcode/barcode_file.txt'
 params.barcodeFile2 = './Data/barcode/barcode_file2.txt'
 params.cleanfolder = './outdir_barcodeSplit/*'
 
-ifile = Channel.fromFilePairs(params.reads)
-       .set {reads_ch}   
+reads_ch = Channel.fromFilePairs(params.reads)   
               
-barcodeChannel1 = Channel.fromPath(params.barcodeFile1)
-       .set {barcode_f}
+barcode_f = Channel.fromPath(params.barcodeFile1)
 
-barcodeChannel2 = Channel.fromPath(params.barcodeFile2)
-       .set {barcode_r}
+barcode_r = Channel.fromPath(params.barcodeFile2)
 
 
 //fastqc (QC)
@@ -84,12 +82,31 @@ workflow{
 
        //Setting input ch. for trueAlleles
 
-       sequences = Channel.fromFilePairs('outdir_filteredFastaFromId/collapsed_fastp_*Ca*{DQAf,DQAr}.fasta.fa').set{ file_list }
-      
-       file_list.view()
+       dqafile = Channel.fromFilePairs("./outdir_filteredFastaFromId/c_fastp_*{Tis,TIS}*DQAr.fasta.fa")
+       dqbfile = Channel.fromFilePairs("./outdir_filteredFastaFromId/c_fastp_*{Tis,TIS}*DQBr.fasta.fa")
+       drbfile = Channel.fromFilePairs("./outdir_filteredFastaFromId/c_fastp_*{Tis,TIS}*DRBr.fasta.fa")
 
 
-       }
+       trueAllelesDQA(dqafile)
+       trueAllelesDQB(dqbfile)
+       trueAllelesDRB(drbfile)
+
+       filesForCount()
+
+       collapseFilesForCount(filesForCount.out.dqarCount,filesForCount.out.dqbrCount,filesForCount.out.drbrCount)
+
+       //........................CountTable...............................
+
+        //input_fasta_files
+        fastaFiles = Channel.fromPath('./outdir_taFiltered/DQAr/*').collect().set{fastafiles}
+        query = Channel.fromPath('./outdir_taFiltered/collapsedCountGenes/DQAr.full').set{queryfile}
+    
+        //run module
+        count_sequences(queryfile)//,fastafiles.view())
+
+
+
+}      
 
 
 
