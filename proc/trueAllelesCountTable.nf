@@ -56,11 +56,11 @@ path(query_file)
 //path(sequences_file)
 
 output:
-path "dqarCounts.tsv" , optional:true
+path "drbfCounts.tsv" , optional:true
 
 script:
 """
-cd /home/sergiolitwiniuk/Documents/nextFlowFiles/nf-lula-2/outdir_taFiltered/DQAr
-${params.env} $PWD/proc/count.pl ../collapsedCountGenes/${query_file} > ../dqarCounts.tsv
+cd /home/sergiolitwiniuk/Documents/nextFlowFiles/nf-lula-2/outdir_taFiltered/DRBf
+${params.env} $PWD/proc/count.pl ../collapsedCountGenes/${query_file} > ../drbfCounts.tsv
 """
 }

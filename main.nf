@@ -98,9 +98,9 @@ workflow{
        //........................CountTable...............................
 
         //input_fasta_files
-        fastaFiles = Channel.fromPath('./outdir_taFiltered/DQAr/*').collect().set{fastafiles}
-        query = Channel.fromPath('./outdir_taFiltered/collapsedCountGenes/DQAr.full').set{queryfile}
-    
+        fastaFiles = Channel.fromPath('./outdir_taFiltered/DRBf/*').collect().set{fastafiles}
+        query = Channel.fromPath('./outdir_taFiltered/collapsedCountGenes/DRBf.full').set{queryfile}
+
         //run module
         count_sequences(queryfile)//,fastafiles.view())
 
