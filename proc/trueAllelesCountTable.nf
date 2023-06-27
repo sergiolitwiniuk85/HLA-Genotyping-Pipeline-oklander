@@ -2,16 +2,16 @@ process filesForCount{
 publishDir("outdir_taFiltered/", mode:'copy')
 
 output:
-path "DQAr.full", emit: dqarCount
-path "DQBr.full", emit: dqbrCount
-path "DRBr.full", emit: drbrCount
+path "DQA.full", emit: dqaCount
+path "DQB.full", emit: dqbCount
+path "DRB.full", emit: drbCount
 
 
 script:
 """
-ls $baseDir/outdir_taFiltered/DQAr/* | xargs cat >> "DQAr.full"
-ls $baseDir/outdir_taFiltered/DQBr/* | xargs cat >> "DQBr.full" 
-ls $baseDir/outdir_taFiltered/DRBr/* | xargs cat >> "DRBr.full"
+ls $baseDir/outdir_taFiltered/DQA/* | xargs cat >> "DQA.full"
+ls $baseDir/outdir_taFiltered/DQB/* | xargs cat >> "DQB.full" 
+ls $baseDir/outdir_taFiltered/DRB/* | xargs cat >> "DRB.full"
 """
 
 }
@@ -33,9 +33,9 @@ path "${read2}", emit: uniqueDRB
 
 script:
 """
-fastx_collapser -i ${read0} -o ${read0}
-fastx_collapser -i ${read1} -o ${read1}
-fastx_collapser -i ${read2} -o ${read2}
+fastx_collapser -i ${read0} -o x_${read0}
+fastx_collapser -i ${read1} -o x_${read1}
+fastx_collapser -i ${read2} -o x_${read2}
 """
 
 }
@@ -56,11 +56,11 @@ path(query_file)
 //path(sequences_file)
 
 output:
-path "drbfCounts.tsv" , optional:true
+path "drbCounts.tsv" , optional:true
 
 script:
 """
-cd /home/sergiolitwiniuk/Documents/nextFlowFiles/nf-lula-2/outdir_taFiltered/DRBf
-${params.env} $PWD/proc/count.pl ../collapsedCountGenes/${query_file} > ../drbfCounts.tsv
+cd /home/sergiolitwiniuk/Documents/nextFlowFiles/nf-lula-2/outdir_taFiltered/DRB
+${params.env} $PWD/proc/count.pl ../collapsedCountGenes/${query_file} > ../drbCounts.tsv
 """
 }
