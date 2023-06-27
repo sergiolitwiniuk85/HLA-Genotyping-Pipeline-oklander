@@ -13,9 +13,7 @@ process fastp{
        tuple val(sample_id), path(reads)
 
        output:
-       path("fastp_${sample_id}_R1.fastq"), emit: fastp_1
-       path("fastp_${sample_id}_R2.fastq"), emit: fastp_2
-       path("*.html")
+       tuple val("${sample_id}"), path("${sample_id}_R1.fastq"), path("${sample_id}_R2.fastq"), emit: fastpOut
        
        script:
 

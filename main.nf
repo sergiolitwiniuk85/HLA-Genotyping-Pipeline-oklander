@@ -10,6 +10,8 @@ include { compare_sequences } from './proc/compareSequences.nf'
 include { fareverse } from './proc/faReverse.nf'
 include { trueAllelesDQA; trueAllelesDQB; trueAllelesDRB } from './proc/trueAllelesFilter.nf'
 include { filesForCount; collapseFilesForCount; count_sequences } from './proc/trueAllelesCountTable.nf'
+include { pandaSeq ; barcodeSplit } from './proc/pandaseq.nf'
+
 
 params.reads = './Data/*/*{R1,R2}.fastq'
 params.outdir = "output"
@@ -63,11 +65,51 @@ workflow{
        fastqc(reads_ch)
 
        fastp(reads_ch)
+
        
-       barcodeSplit_f(fastp.out.fastp_1.flatten().buffer( size: 1 ), barcode_f)
+       pandaSeq(fastp.out.fastpOut.view())
+              
+       
+       fastxcollapser(pandaSeq.out.pandaOut)
+       
+       barcodeSplit_f(fastxcollapser.out.seqCollapsed, barcode_f)
+
+
+       barcodeSplit_f.out.dqaf.concat(barcodeSplit_f.out.dqbf,barcodeSplit_f.out.drbf).set{toCollapse}
+
+       collapseFilter(toCollapse)
+
+       idsToFasta(collapseFilter.out.idReads,collapseFilter.out.idFile)
+
+     //Setting input ch. for trueAlleles
+
+       dqafile = Channel.fromFilePairs("./outdir_filteredFastaFromId/c_*{Tis,TIS}*DQAf.fasta.fa")
+       dqbfile = Channel.fromFilePairs("./outdir_filteredFastaFromId/c_*{Tis,TIS}*DQBf.fasta.fa")
+       drbfile = Channel.fromFilePairs("./outdir_filteredFastaFromId/c_*{Tis,TIS}*DRBf.fasta.fa")
+
+
+       trueAllelesDQA(dqafile)
+       trueAllelesDQB(dqbfile)
+       trueAllelesDRB(drbfile)
+
+       filesForCount() 
+       
+       collapseFilesForCount(filesForCount.out.dqaCount,filesForCount.out.dqbCount,filesForCount.out.drbCount)
+
+       //........................CountTable...............................
+
+        //input_fasta_files
+        fastaFiles = Channel.fromPath('./outdir_taFiltered/DRB/*').collect().set{fastafiles}
+        query = Channel.fromPath('./outdir_taFiltered/collapsedCountGenes/DRB.full').set{queryfile}
+
+        //run module
+        count_sequences(queryfile)//,fastafiles.view())
+
+
+        /*
+
        barcodeSplit_r(fastp.out.fastp_2.flatten().buffer( size: 1 ), barcode_r)
 
-       fastxcollapser(barcodeSplit_f.out.dqaf,barcodeSplit_f.out.dqbf,barcodeSplit_f.out.drbf,barcodeSplit_r.out.dqar,barcodeSplit_r.out.dqbr,barcodeSplit_r.out.drbr)
        
        fastxcollapser.out.collapsed_dqaf.concat(fastxcollapser.out.collapsed_dqar,
                                                  fastxcollapser.out.collapsed_dqbf,
@@ -104,7 +146,7 @@ workflow{
         //run module
         count_sequences(queryfile)//,fastafiles.view())
 
-
+    */
 
 }      
 
