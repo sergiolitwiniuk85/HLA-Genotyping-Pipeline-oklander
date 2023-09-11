@@ -7,11 +7,12 @@ tuple val(seqid), path(reads)
 
 
 output:
-path "${seqid}", emit: tAlleles
+path "${seqid}", emit: tAllelesdqa
 
 
 script:
 """
+cowsay "trueAllelesDQA"
 cat ${reads[0]} ${reads[1]} | fastx_collapser -v -o ${seqid}
 """
 
@@ -26,7 +27,7 @@ tuple val(seqid), path(reads)
 
 
 output:
-path "${seqid}", emit: tAlleles
+path "${seqid}", emit: tAllelesdqb
 
 
 script:
@@ -45,7 +46,7 @@ tuple val(seqid), path(reads)
 
 
 output:
-path "${seqid}", emit: tAlleles
+path "${seqid}", emit: tAllelesdrb
 
 
 script:

@@ -11,7 +11,7 @@ process pandaSeq {
 
     script:
     """
-    pear -j 8 -f ${f} -r ${r} -o ps_${sample}
+    pear -n 220 -m 350 -j 8 -f ${f} -r ${r} -o ps_${sample}
     """
 }
 

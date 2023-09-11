@@ -22,8 +22,7 @@ ${params.env} $PWD/proc/collapserFrecFilter.py $reads ${params.frec} > ${reads}.
 }
 
 process idsToFasta{
-publishDir("outdir_filteredFastaFromId/", mode:"copy", overwrite:false)
-
+publishDir("outdir_filteredFastaFromId/", mode:"copy", overwrite:true)
 
 input:
 path(reads)
@@ -31,6 +30,7 @@ path(idFile)
 
 output:
 path "${reads}.fa"
+
 
 script:
 

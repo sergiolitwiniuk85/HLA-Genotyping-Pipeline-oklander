@@ -1,0 +1,321 @@
+|0x00000006e6300000, 0x00000006e6300000, 0x00000006e6400000|  0%| F|  |TAMS 0x00000006e6300000, 0x00000006e6300000| Untracked 
+| 416|0x00000006e6400000, 0x00000006e6400000, 0x00000006e6500000|  0%| F|  |TAMS 0x00000006e6400000, 0x00000006e6400000| Untracked 
+| 417|0x00000006e6500000, 0x00000006e6500000, 0x00000006e6600000|  0%| F|  |TAMS 0x00000006e6500000, 0x00000006e6500000| Untracked 
+| 418|0x00000006e6600000, 0x00000006e6600000, 0x00000006e6700000|  0%| F|  |TAMS 0x00000006e6600000, 0x00000006e6600000| Untracked 
+| 419|0x00000006e6700000, 0x00000006e6700000, 0x00000006e6800000|  0%| F|  |TAMS 0x00000006e6700000, 0x00000006e6700000| Untracked 
+| 420|0x00000006e6800000, 0x00000006e6800000, 0x00000006e6900000|  0%| F|  |TAMS 0x00000006e6800000, 0x00000006e6800000| Untracked 
+| 421|0x00000006e6900000, 0x00000006e6900000, 0x00000006e6a00000|  0%| F|  |TAMS 0x00000006e6900000, 0x00000006e6900000| Untracked 
+| 422|0x00000006e6a00000, 0x00000006e6a00000, 0x00000006e6b00000|  0%| F|  |TAMS 0x00000006e6a00000, 0x00000006e6a00000| Untracked 
+| 423|0x00000006e6b00000, 0x00000006e6b00000, 0x00000006e6c00000|  0%| F|  |TAMS 0x00000006e6b00000, 0x00000006e6b00000| Untracked 
+| 424|0x00000006e6c00000, 0x00000006e6c00000, 0x00000006e6d00000|  0%| F|  |TAMS 0x00000006e6c00000, 0x00000006e6c00000| Untracked 
+| 425|0x00000006e6d00000, 0x00000006e6d00000, 0x00000006e6e00000|  0%| F|  |TAMS 0x00000006e6d00000, 0x00000006e6d00000| Untracked 
+| 426|0x00000006e6e00000, 0x00000006e6e00000, 0x00000006e6f00000|  0%| F|  |TAMS 0x00000006e6e00000, 0x00000006e6e00000| Untracked 
+| 427|0x00000006e6f00000, 0x00000006e6f00000, 0x00000006e7000000|  0%| F|  |TAMS 0x00000006e6f00000, 0x00000006e6f00000| Untracked 
+| 428|0x00000006e7000000, 0x00000006e7000000, 0x00000006e7100000|  0%| F|  |TAMS 0x00000006e7000000, 0x00000006e7000000| Untracked 
+| 429|0x00000006e7100000, 0x00000006e7100000, 0x00000006e7200000|  0%| F|  |TAMS 0x00000006e7100000, 0x00000006e7100000| Untracked 
+| 430|0x00000006e7200000, 0x00000006e7200000, 0x00000006e7300000|  0%| F|  |TAMS 0x00000006e7200000, 0x00000006e7200000| Untracked 
+| 431|0x00000006e7300000, 0x00000006e7300000, 0x00000006e7400000|  0%| F|  |TAMS 0x00000006e7300000, 0x00000006e7300000| Untracked 
+| 432|0x00000006e7400000, 0x00000006e7400000, 0x00000006e7500000|  0%| F|  |TAMS 0x00000006e7400000, 0x00000006e7400000| Untracked 
+| 433|0x00000006e7500000, 0x00000006e7500000, 0x00000006e7600000|  0%| F|  |TAMS 0x00000006e7500000, 0x00000006e7500000| Untracked 
+| 434|0x00000006e7600000, 0x00000006e7600000, 0x00000006e7700000|  0%| F|  |TAMS 0x00000006e7600000, 0x00000006e7600000| Untracked 
+| 435|0x00000006e7700000, 0x00000006e7700000, 0x00000006e7800000|  0%| F|  |TAMS 0x00000006e7700000, 0x00000006e7700000| Untracked 
+| 436|0x00000006e7800000, 0x00000006e7800000, 0x00000006e7900000|  0%| F|  |TAMS 0x00000006e7800000, 0x00000006e7800000| Untracked 
+| 437|0x00000006e7900000, 0x00000006e7900000, 0x00000006e7a00000|  0%| F|  |TAMS 0x00000006e7900000, 0x00000006e7900000| Untracked 
+| 438|0x00000006e7a00000, 0x00000006e7a00000, 0x00000006e7b00000|  0%| F|  |TAMS 0x00000006e7a00000, 0x00000006e7a00000| Untracked 
+| 439|0x00000006e7b00000, 0x00000006e7b00000, 0x00000006e7c00000|  0%| F|  |TAMS 0x00000006e7b00000, 0x00000006e7b00000| Untracked 
+| 440|0x00000006e7c00000, 0x00000006e7c00000, 0x00000006e7d00000|  0%| F|  |TAMS 0x00000006e7c00000, 0x00000006e7c00000| Untracked 
+| 441|0x00000006e7d00000, 0x00000006e7d00000, 0x00000006e7e00000|  0%| F|  |TAMS 0x00000006e7d00000, 0x00000006e7d00000| Untracked 
+| 442|0x00000006e7e00000, 0x00000006e7e00000, 0x00000006e7f00000|  0%| F|  |TAMS 0x00000006e7e00000, 0x00000006e7e00000| Untracked 
+| 443|0x00000006e7f00000, 0x00000006e7f00000, 0x00000006e8000000|  0%| F|  |TAMS 0x00000006e7f00000, 0x00000006e7f00000| Untracked 
+| 444|0x00000006e8000000, 0x00000006e8000000, 0x00000006e8100000|  0%| F|  |TAMS 0x00000006e8000000, 0x00000006e8000000| Untracked 
+| 445|0x00000006e8100000, 0x00000006e8100000, 0x00000006e8200000|  0%| F|  |TAMS 0x00000006e8100000, 0x00000006e8100000| Untracked 
+| 446|0x00000006e8200000, 0x00000006e8200000, 0x00000006e8300000|  0%| F|  |TAMS 0x00000006e8200000, 0x00000006e8200000| Untracked 
+| 447|0x00000006e8300000, 0x00000006e8300000, 0x00000006e8400000|  0%| F|  |TAMS 0x00000006e8300000, 0x00000006e8300000| Untracked 
+| 448|0x00000006e8400000, 0x00000006e8400000, 0x00000006e8500000|  0%| F|  |TAMS 0x00000006e8400000, 0x00000006e8400000| Untracked 
+| 449|0x00000006e8500000, 0x00000006e8500000, 0x00000006e8600000|  0%| F|  |TAMS 0x00000006e8500000, 0x00000006e8500000| Untracked 
+| 450|0x00000006e8600000, 0x00000006e8600000, 0x00000006e8700000|  0%| F|  |TAMS 0x00000006e8600000, 0x00000006e8600000| Untracked 
+| 451|0x00000006e8700000, 0x00000006e8700000, 0x00000006e8800000|  0%| F|  |TAMS 0x00000006e8700000, 0x00000006e8700000| Untracked 
+| 452|0x00000006e8800000, 0x00000006e8800000, 0x00000006e8900000|  0%| F|  |TAMS 0x00000006e8800000, 0x00000006e8800000| Untracked 
+| 453|0x00000006e8900000, 0x00000006e8900000, 0x00000006e8a00000|  0%| F|  |TAMS 0x00000006e8900000, 0x00000006e8900000| Untracked 
+| 454|0x00000006e8a00000, 0x00000006e8a00000, 0x00000006e8b00000|  0%| F|  |TAMS 0x00000006e8a00000, 0x00000006e8a00000| Untracked 
+| 455|0x00000006e8b00000, 0x00000006e8b00000, 0x00000006e8c00000|  0%| F|  |TAMS 0x00000006e8b00000, 0x00000006e8b00000| Untracked 
+| 456|0x00000006e8c00000, 0x00000006e8c00000, 0x00000006e8d00000|  0%| F|  |TAMS 0x00000006e8c00000, 0x00000006e8c00000| Untracked 
+| 457|0x00000006e8d00000, 0x00000006e8d00000, 0x00000006e8e00000|  0%| F|  |TAMS 0x00000006e8d00000, 0x00000006e8d00000| Untracked 
+| 458|0x00000006e8e00000, 0x00000006e8e00000, 0x00000006e8f00000|  0%| F|  |TAMS 0x00000006e8e00000, 0x00000006e8e00000| Untracked 
+| 459|0x00000006e8f00000, 0x00000006e8f00000, 0x00000006e9000000|  0%| F|  |TAMS 0x00000006e8f00000, 0x00000006e8f00000| Untracked 
+| 460|0x00000006e9000000, 0x00000006e9000000, 0x00000006e9100000|  0%| F|  |TAMS 0x00000006e9000000, 0x00000006e9000000| Untracked 
+| 461|0x00000006e9100000, 0x00000006e9100000, 0x00000006e9200000|  0%| F|  |TAMS 0x00000006e9100000, 0x00000006e9100000| Untracked 
+| 462|0x00000006e9200000, 0x00000006e9200000, 0x00000006e9300000|  0%| F|  |TAMS 0x00000006e9200000, 0x00000006e9200000| Untracked 
+| 463|0x00000006e9300000, 0x00000006e9300000, 0x00000006e9400000|  0%| F|  |TAMS 0x00000006e9300000, 0x00000006e9300000| Untracked 
+| 464|0x00000006e9400000, 0x00000006e9400000, 0x00000006e9500000|  0%| F|  |TAMS 0x00000006e9400000, 0x00000006e9400000| Untracked 
+| 465|0x00000006e9500000, 0x00000006e9500000, 0x00000006e9600000|  0%| F|  |TAMS 0x00000006e9500000, 0x00000006e9500000| Untracked 
+| 466|0x00000006e9600000, 0x00000006e9600000, 0x00000006e9700000|  0%| F|  |TAMS 0x00000006e9600000, 0x00000006e9600000| Untracked 
+| 467|0x00000006e9700000, 0x00000006e9700000, 0x00000006e9800000|  0%| F|  |TAMS 0x00000006e9700000, 0x00000006e9700000| Untracked 
+| 468|0x00000006e9800000, 0x00000006e9857848, 0x00000006e9900000| 34%| E|  |TAMS 0x00000006e9800000, 0x00000006e9800000| Complete 
+| 469|0x00000006e9900000, 0x00000006e9a00000, 0x00000006e9a00000|100%| E|CS|TAMS 0x00000006e9900000, 0x00000006e9900000| Complete 
+| 470|0x00000006e9a00000, 0x00000006e9b00000, 0x00000006e9b00000|100%| E|CS|TAMS 0x00000006e9a00000, 0x00000006e9a00000| Complete 
+| 471|0x00000006e9b00000, 0x00000006e9c00000, 0x00000006e9c00000|100%| E|CS|TAMS 0x00000006e9b00000, 0x00000006e9b00000| Complete 
+| 472|0x00000006e9c00000, 0x00000006e9d00000, 0x00000006e9d00000|100%| E|CS|TAMS 0x00000006e9c00000, 0x00000006e9c00000| Complete 
+| 473|0x00000006e9d00000, 0x00000006e9e00000, 0x00000006e9e00000|100%| E|CS|TAMS 0x00000006e9d00000, 0x00000006e9d00000| Complete 
+| 474|0x00000006e9e00000, 0x00000006e9f00000, 0x00000006e9f00000|100%| E|CS|TAMS 0x00000006e9e00000, 0x00000006e9e00000| Complete 
+| 475|0x00000006e9f00000, 0x00000006ea000000, 0x00000006ea000000|100%| E|CS|TAMS 0x00000006e9f00000, 0x00000006e9f00000| Complete 
+| 476|0x00000006ea000000, 0x00000006ea100000, 0x00000006ea100000|100%| E|CS|TAMS 0x00000006ea000000, 0x00000006ea000000| Complete 
+| 477|0x00000006ea100000, 0x00000006ea200000, 0x00000006ea200000|100%| E|CS|TAMS 0x00000006ea100000, 0x00000006ea100000| Complete 
+| 478|0x00000006ea200000, 0x00000006ea300000, 0x00000006ea300000|100%| E|CS|TAMS 0x00000006ea200000, 0x00000006ea200000| Complete 
+| 479|0x00000006ea300000, 0x00000006ea400000, 0x00000006ea400000|100%| E|CS|TAMS 0x00000006ea300000, 0x00000006ea300000| Complete 
+| 480|0x00000006ea400000, 0x00000006ea500000, 0x00000006ea500000|100%| E|CS|TAMS 0x00000006ea400000, 0x00000006ea400000| Complete 
+| 481|0x00000006ea500000, 0x00000006ea600000, 0x00000006ea600000|100%| E|CS|TAMS 0x00000006ea500000, 0x00000006ea500000| Complete 
+| 482|0x00000006ea600000, 0x00000006ea700000, 0x00000006ea700000|100%| E|CS|TAMS 0x00000006ea600000, 0x00000006ea600000| Complete 
+| 483|0x00000006ea700000, 0x00000006ea800000, 0x00000006ea800000|100%| E|CS|TAMS 0x00000006ea700000, 0x00000006ea700000| Complete 
+| 484|0x00000006ea800000, 0x00000006ea900000, 0x00000006ea900000|100%| E|CS|TAMS 0x00000006ea800000, 0x00000006ea800000| Complete 
+| 485|0x00000006ea900000, 0x00000006eaa00000, 0x00000006eaa00000|100%| E|CS|TAMS 0x00000006ea900000, 0x00000006ea900000| Complete 
+| 486|0x00000006eaa00000, 0x00000006eab00000, 0x00000006eab00000|100%| E|CS|TAMS 0x00000006eaa00000, 0x00000006eaa00000| Complete 
+
+Card table byte_map: [0x00007f67ce2c0000,0x00007f67cec5e000] _byte_map_base: 0x00007f67cac5e000
+
+Marking Bits (Prev, Next): (CMBitMap*) 0x00007f67e807b188, (CMBitMap*) 0x00007f67e807b1c0
+ Prev Bits: [0x00007f67c3310000, 0x00007f67c8000000)
+ Next Bits: [0x00007f67be620000, 0x00007f67c3310000)
+
+Polling page: 0x00007f67eebd1000
+
+Metaspace:
+
+Usage:
+  Non-class:     42,97 MB capacity,    40,00 MB ( 93%) used,     2,79 MB (  6%) free+waste,   194,19 KB ( <1%) overhead. 
+      Class:      7,11 MB capacity,     5,56 MB ( 78%) used,     1,46 MB ( 20%) free+waste,   101,75 KB (  1%) overhead. 
+       Both:     50,09 MB capacity,    45,55 MB ( 91%) used,     4,24 MB (  8%) free+waste,   295,94 KB ( <1%) overhead. 
+
+Virtual space:
+  Non-class space:       44,00 MB reserved,      43,08 MB ( 98%) committed 
+      Class space:        1,00 GB reserved,       7,12 MB ( <1%) committed 
+             Both:        1,04 GB reserved,      50,20 MB (  5%) committed 
+
+Chunk freelists:
+   Non-Class:  44,00 KB
+       Class:  0 bytes
+        Both:  44,00 KB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1,00 GB
+Initial GC threshold: 20,80 MB
+Current GC threshold: 58,88 MB
+CDS: off
+
+CodeHeap 'non-profiled nmethods': size=120032Kb used=4188Kb max_used=4188Kb free=115843Kb
+ bounds [0x00007f67d74c8000, 0x00007f67d78e8000, 0x00007f67dea00000]
+CodeHeap 'profiled nmethods': size=120028Kb used=14547Kb max_used=14547Kb free=105480Kb
+ bounds [0x00007f67cff91000, 0x00007f67d0dd1000, 0x00007f67d74c8000]
+CodeHeap 'non-nmethods': size=5700Kb used=2273Kb max_used=2347Kb free=3426Kb
+ bounds [0x00007f67cfa00000, 0x00007f67cfc70000, 0x00007f67cff91000]
+ total_blobs=7548 nmethods=6805 adapters=654
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+
+Compilation events (20 events):
+Event: 29,380 Thread 0x00007f67e8264800 nmethod 6945 0x00007f67d0dc0710 code [0x00007f67d0dc0920, 0x00007f67d0dc0de0]
+Event: 29,380 Thread 0x00007f67e8264800 6949       3       groovyx.gpars.util.DefaultMessageQueue::poll (56 bytes)
+Event: 29,381 Thread 0x00007f67e8264800 nmethod 6949 0x00007f67d0dc1090 code [0x00007f67d0dc12e0, 0x00007f67d0dc1d90]
+Event: 29,381 Thread 0x00007f67e8264800 6946       3       jdk.internal.misc.Unsafe::getAndSetObject (24 bytes)
+Event: 29,381 Thread 0x00007f67e8264800 nmethod 6946 0x00007f67d0dc2010 code [0x00007f67d0dc21e0, 0x00007f67d0dc24f0]
+Event: 29,381 Thread 0x00007f67e8264800 6948   !   3       org.codehaus.groovy.runtime.ScriptBytecodeAdapter::setGroovyObjectProperty (20 bytes)
+Event: 29,382 Thread 0x00007f67e8264800 nmethod 6948 0x00007f67d0dc2610 code [0x00007f67d0dc27e0, 0x00007f67d0dc29f0]
+Event: 29,383 Thread 0x00007f67e8264800 6950       3       java.lang.Integer::stringSize (47 bytes)
+Event: 29,384 Thread 0x00007f67e8264800 nmethod 6950 0x00007f67d0dc2b10 code [0x00007f67d0dc2cc0, 0x00007f67d0dc2ef0]
+Event: 29,384 Thread 0x00007f67e8264800 6951       3       com.esotericsoftware.kryo.util.IdentityObjectIntMap::clear (40 bytes)
+Event: 29,384 Thread 0x00007f67e8264800 nmethod 6951 0x00007f67d0dc2f90 code [0x00007f67d0dc3160, 0x00007f67d0dc34f0]
+Event: 29,395 Thread 0x00007f67e8264800 6953       3       java.lang.ThreadLocal$ThreadLocalMap::getEntryAfterMiss (63 bytes)
+Event: 29,396 Thread 0x00007f67e8264800 nmethod 6953 0x00007f67d0dc3610 code [0x00007f67d0dc3800, 0x00007f67d0dc3d60]
+Event: 29,396 Thread 0x00007f67e8264800 6954       3       nextflow.Global::getSession (60 bytes)
+Event: 29,397 Thread 0x00007f67e8264800 nmethod 6954 0x00007f67d0dc3f10 code [0x00007f67d0dc4140, 0x00007f67d0dc4820]
+Event: 29,403 Thread 0x00007f67e8264800 6958       3       org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation::castToType (156 bytes)
+Event: 29,404 Thread 0x00007f67e8264800 nmethod 6958 0x00007f67d0dc4a10 code [0x00007f67d0dc4d00, 0x00007f67d0dc57d0]
+Event: 29,404 Thread 0x00007f67e8264800 6959       3       com.esotericsoftware.kryo.util.ObjectMap::hash2 (19 bytes)
+Event: 29,405 Thread 0x00007f67e8264800 nmethod 6959 0x00007f67d0dc5a90 code [0x00007f67d0dc5c40, 0x00007f67d0dc5d50]
+Event: 29,405 Thread 0x00007f67e8264800 6957   !   3       org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation::asCollection (197 bytes)
+
+GC Heap History (18 events):
+Event: 0,739 GC heap before
+{Heap before GC invocations=0 (full 0):
+ garbage-first heap   total 315392K, used 23552K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 24 young (24576K), 0 survivors (0K)
+ Metaspace       used 13863K, capacity 14019K, committed 14208K, reserved 1062912K
+  class space    used 1285K, capacity 1356K, committed 1408K, reserved 1048576K
+}
+Event: 0,746 GC heap after
+{Heap after GC invocations=1 (full 0):
+ garbage-first heap   total 315392K, used 6569K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 3 young (3072K), 3 survivors (3072K)
+ Metaspace       used 13863K, capacity 14019K, committed 14208K, reserved 1062912K
+  class space    used 1285K, capacity 1356K, committed 1408K, reserved 1048576K
+}
+Event: 1,047 GC heap before
+{Heap before GC invocations=1 (full 0):
+ garbage-first heap   total 315392K, used 18857K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 15 young (15360K), 3 survivors (3072K)
+ Metaspace       used 16895K, capacity 17163K, committed 17408K, reserved 1064960K
+  class space    used 1602K, capacity 1720K, committed 1792K, reserved 1048576K
+}
+Event: 1,052 GC heap after
+{Heap after GC invocations=2 (full 0):
+ garbage-first heap   total 315392K, used 8406K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 2 young (2048K), 2 survivors (2048K)
+ Metaspace       used 16895K, capacity 17163K, committed 17408K, reserved 1064960K
+  class space    used 1602K, capacity 1720K, committed 1792K, reserved 1048576K
+}
+Event: 1,536 GC heap before
+{Heap before GC invocations=2 (full 0):
+ garbage-first heap   total 315392K, used 48342K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 39 young (39936K), 2 survivors (2048K)
+ Metaspace       used 19906K, capacity 20344K, committed 20480K, reserved 1067008K
+  class space    used 1827K, capacity 2011K, committed 2048K, reserved 1048576K
+}
+Event: 1,542 GC heap after
+{Heap after GC invocations=3 (full 0):
+ garbage-first heap   total 315392K, used 12760K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 5 young (5120K), 5 survivors (5120K)
+ Metaspace       used 19906K, capacity 20344K, committed 20480K, reserved 1067008K
+  class space    used 1827K, capacity 2011K, committed 2048K, reserved 1048576K
+}
+Event: 1,669 GC heap before
+{Heap before GC invocations=3 (full 0):
+ garbage-first heap   total 315392K, used 21976K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 15 young (15360K), 5 survivors (5120K)
+ Metaspace       used 20650K, capacity 21083K, committed 21296K, reserved 1069056K
+  class space    used 1920K, capacity 2086K, committed 2176K, reserved 1048576K
+}
+Event: 1,688 GC heap after
+{Heap after GC invocations=4 (full 0):
+ garbage-first heap   total 315392K, used 14081K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 5 young (5120K), 5 survivors (5120K)
+ Metaspace       used 20650K, capacity 21083K, committed 21296K, reserved 1069056K
+  class space    used 1920K, capacity 2086K, committed 2176K, reserved 1048576K
+}
+Event: 2,633 GC heap before
+{Heap before GC invocations=5 (full 0):
+ garbage-first heap   total 315392K, used 76545K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 66 young (67584K), 5 survivors (5120K)
+ Metaspace       used 23316K, capacity 23809K, committed 23984K, reserved 1071104K
+  class space    used 2242K, capacity 2447K, committed 2560K, reserved 1048576K
+}
+Event: 2,642 GC heap after
+{Heap after GC invocations=6 (full 0):
+ garbage-first heap   total 381952K, used 18847K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 7 young (7168K), 7 survivors (7168K)
+ Metaspace       used 23316K, capacity 23809K, committed 23984K, reserved 1071104K
+  class space    used 2242K, capacity 2447K, committed 2560K, reserved 1048576K
+}
+Event: 3,856 GC heap before
+{Heap before GC invocations=6 (full 0):
+ garbage-first heap   total 381952K, used 111007K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 98 young (100352K), 7 survivors (7168K)
+ Metaspace       used 32419K, capacity 33192K, committed 33456K, reserved 1079296K
+  class space    used 3470K, capacity 3789K, committed 3840K, reserved 1048576K
+}
+Event: 3,870 GC heap after
+{Heap after GC invocations=7 (full 0):
+ garbage-first heap   total 381952K, used 26455K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 13 young (13312K), 13 survivors (13312K)
+ Metaspace       used 32419K, capacity 33192K, committed 33456K, reserved 1079296K
+  class space    used 3470K, capacity 3789K, committed 3840K, reserved 1048576K
+}
+Event: 4,652 GC heap before
+{Heap before GC invocations=7 (full 0):
+ garbage-first heap   total 381952K, used 151383K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 136 young (139264K), 13 survivors (13312K)
+ Metaspace       used 35002K, capacity 35838K, committed 35920K, reserved 1081344K
+  class space    used 3713K, capacity 4054K, committed 4096K, reserved 1048576K
+}
+Event: 4,683 GC heap after
+{Heap after GC invocations=8 (full 0):
+ garbage-first heap   total 381952K, used 32420K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 19 young (19456K), 19 survivors (19456K)
+ Metaspace       used 35002K, capacity 35838K, committed 35920K, reserved 1081344K
+  class space    used 3713K, capacity 4054K, committed 4096K, reserved 1048576K
+}
+Event: 5,775 GC heap before
+{Heap before GC invocations=9 (full 0):
+ garbage-first heap   total 381952K, used 201380K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 184 young (188416K), 19 survivors (19456K)
+ Metaspace       used 36583K, capacity 38087K, committed 38352K, reserved 1083392K
+  class space    used 3895K, capacity 4412K, committed 4480K, reserved 1048576K
+}
+Event: 5,803 GC heap after
+{Heap after GC invocations=10 (full 0):
+ garbage-first heap   total 381952K, used 37394K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 11 young (11264K), 11 survivors (11264K)
+ Metaspace       used 36583K, capacity 38087K, committed 38352K, reserved 1083392K
+  class space    used 3895K, capacity 4412K, committed 4480K, reserved 1048576K
+}
+Event: 25,049 GC heap before
+{Heap before GC invocations=10 (full 0):
+ garbage-first heap   total 381952K, used 249362K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 218 young (223232K), 11 survivors (11264K)
+ Metaspace       used 46151K, capacity 50709K, committed 50768K, reserved 1093632K
+  class space    used 5617K, capacity 7153K, committed 7168K, reserved 1048576K
+}
+Event: 25,202 GC heap after
+{Heap after GC invocations=11 (full 0):
+ garbage-first heap   total 498688K, used 53976K [0x00000006cc400000, 0x0000000800000000)
+  region size 1024K, 27 young (27648K), 27 survivors (27648K)
+ Metaspace       used 46151K, capacity 50709K, committed 50768K, reserved 1093632K
+  class space    used 5617K, capacity 7153K, committed 7168K, reserved 1048576K
+}
+
+Deoptimization events (20 events):
+Event: 29,251 Thread 0x00007f67e84bb800 DEOPT PACKING pc=0x00007f67d78d7154 sp=0x00007f673bbfc2a0
+Event: 29,251 Thread 0x00007f67e84bb800 DEOPT UNPACKING pc=0x00007f67cfa082a5 sp=0x00007f673bbfc218 mode 2
+Event: 29,287 Thread 0x00007f67e8efc800 Uncommon trap: trap_request=0xffffff4d fr.pc=0x00007f67d78c2df0 relative=0x00000000000002d0
+Event: 29,287 Thread 0x00007f67e8efc800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f67d78c2df0 method=java.lang.StringUTF16.indexOfLatin1Unsafe([BI[BII)I @ 110 c2
+Event: 29,287 Thread 0x00007f67e8efc800 DEOPT PACKING pc=0x00007f67d78c2df0 sp=0x00007f67949fd950
+Event: 29,287 Thread 0x00007f67e8efc800 DEOPT UNPACKING pc=0x00007f67cfa082a5 sp=0x00007f67949fd8d0 mode 2
+Event: 29,312 Thread 0x00007f67e84bb800 Uncommon trap: trap_request=0xffffffde fr.pc=0x00007f67d78d5c4c relative=0x000000000000008c
+Event: 29,312 Thread 0x00007f67e84bb800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f67d78d5c4c method=java.lang.AbstractStringBuilder.append(Ljava/lang/CharSequence;)Ljava/lang/AbstractStringBuilder; @ 10 c2
+Event: 29,312 Thread 0x00007f67e84bb800 DEOPT PACKING pc=0x00007f67d78d5c4c sp=0x00007f673bbf90a0
+Event: 29,312 Thread 0x00007f67e84bb800 DEOPT UNPACKING pc=0x00007f67cfa082a5 sp=0x00007f673bbf9050 mode 2
+Event: 29,343 Thread 0x00007f67e84bb800 Uncommon trap: trap_request=0xffffff4d fr.pc=0x00007f67d784dfe0 relative=0x0000000000000280
+Event: 29,343 Thread 0x00007f67e84bb800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f67d784dfe0 method=org.codehaus.groovy.runtime.typehandling.DefaultTypeTransformation.castToType(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; @ 53 c2
+Event: 29,343 Thread 0x00007f67e84bb800 DEOPT PACKING pc=0x00007f67d784dfe0 sp=0x00007f673bbfd380
+Event: 29,353 Thread 0x00007f67e84bb800 DEOPT UNPACKING pc=0x00007f67cfa082a5 sp=0x00007f673bbfd328 mode 2
+Event: 29,383 Thread 0x00007f66c4011800 Uncommon trap: trap_request=0xffffff4d fr.pc=0x00007f67d75b6db4 relative=0x0000000000000094
+Event: 29,383 Thread 0x00007f66c4011800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f67d75b6db4 method=java.lang.Integer.stringSize(I)I @ 19 c2
+Event: 29,383 Thread 0x00007f66c4011800 DEOPT PACKING pc=0x00007f67d75b6db4 sp=0x00007f67388fdaa0
+Event: 29,383 Thread 0x00007f66c4011800 DEOPT UNPACKING pc=0x00007f67cfa082a5 sp=0x00007f67388fda38 mode 2
+Event: 29,389 Thread 0x00007f67e8029000 DEOPT PACKING pc=0x00007f67d0bddae4 sp=0x00007f67ee7fd520
+Event: 29,389 Thread 0x00007f67e8029000 DEOPT UNPACKING pc=0x00007f67cfa499fa sp=0x00007f67ee7fc9f0 mode 0
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 29,300 Thread 0x00007f67e84bb800 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9c267e0}: java/lang/reflect/AccessibleObjectCustomizer> (0x00000006e9c267e0) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,304 Thread 0x00007f67e84bb800 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9c32568}: java/lang/reflect/FieldCustomizer> (0x00000006e9c32568) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,310 Thread 0x00007f67e84bb800 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9c7adb0}: java/lang/reflect/MethodBeanInfo> (0x00000006e9c7adb0) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,310 Thread 0x00007f67e84bb800 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9c7c5e8}: java/lang/reflect/ExecutableBeanInfo> (0x00000006e9c7c5e8) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,310 Thread 0x00007f67e84bb800 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9c7ddf8}: java/lang/reflect/ExecutableCustomizer> (0x00000006e9c7ddf8) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,312 Thread 0x00007f67e84bb800 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9c94cd8}: java/lang/reflect/MethodCustomizer> (0x00000006e9c94cd8) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,329 Thread 0x00007f67e84bb800 Exception <a 'java/io/IOException'{0x00000006e9b10d10}> (0x00000006e9b10d10) thrown at [src/hotspot/share/prims/jni.cpp, line 616]
+Event: 29,333 Thread 0x00007f67e8029000 Exception <a 'java/io/IOException'{0x00000006e9b808b0}> (0x00000006e9b808b0) thrown at [src/hotspot/share/prims/jni.cpp, line 616]
+Event: 29,333 Thread 0x00007f67e8029000 Exception <a 'java/io/IOException'{0x00000006e9b81438}> (0x00000006e9b81438) thrown at [src/hotspot/share/prims/jni.cpp, line 616]
+Event: 29,335 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9b98408}: java/util/concurrent/ThreadPoolExecutorBeanInfo> (0x00000006e9b98408) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,335 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9b98f58}: java/util/concurrent/AbstractExecutorServiceBeanInfo> (0x00000006e9b98f58) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,335 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9b99d20}: java/util/concurrent/AbstractExecutorServiceCustomizer> (0x00000006e9b99d20) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,336 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9ba7f40}: java/util/concurrent/ThreadPoolExecutorCustomizer> (0x00000006e9ba7f40) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,350 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9a12bf0}: nextflow/script/WorkflowNotifierBeanInfo> (0x00000006e9a12bf0) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,350 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9a18c48}: nextflow/script/WorkflowNotifierCustomizer> (0x00000006e9a18c48) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,351 Thread 0x00007f67e8029000 Exception <a 'java/io/IOException'{0x00000006e9a1fc78}> (0x00000006e9a1fc78) thrown at [src/hotspot/share/prims/jni.cpp, line 616]
+Event: 29,389 Thread 0x00007f66c400a000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9af14d0}: groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterBeanInfo> (0x00000006e9af14d0) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,389 Thread 0x00007f66c400a000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9af8878}: groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterCustomizer> (0x00000006e9af8878) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,389 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9a64bd0}: nextflow/executor/BatchCleanupBeanInfo> (0x00000006e9a64bd0) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 29,389 Thread 0x00007f67e8029000 Exception <a 'java/lang/ClassNotFoundException'{0x00000006e9a6a958}: nextflow/executor/BatchCleanupCustomizer> (0x00000006e9a6a958) thrown at [src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+
+Events (20 events):
+Event: 29,389 loading class groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterBeanInfo
+Event: 29,389 loading class groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterBeanInfo done
+Event: 29,389 loading class groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterCustomizer
+Event: 29,389 loading class groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterCustomizer done
+Event: 29,389 loading class nextflow/executor/BatchCleanupBeanInfo
+Event: 29,389 loading class nextflow/executor/BatchCleanupBeanInfo done
+Event: 29,389 loading class groovyx/gpars/dataflow/stream/DataflowStreamReadAdapterCustomizer
+Event: 29,389 loading class groovyx/gpars/dataflow/str
