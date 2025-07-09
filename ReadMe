@@ -1,4 +1,4 @@
-# HLA Genotyping Pipeline with Nextflow
+HLA Genotyping Pipeline with Nextflow
 
 ## Overview
 This Nextflow pipeline performs HLA genotyping analysis for MHC class II genes (DQA, DQB, DRB) from paired-end sequencing data. The pipeline integrates quality control, read processing, contig assembly, sequence screening, and gene-specific analysis in an automated workflow.
